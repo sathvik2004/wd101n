@@ -18,7 +18,7 @@ function validate(dobValue) {
 let userForm = document.getElementById('user-form');
 
 const retrieveEntries = () => {
-  let entries = JSON.parse(sessionStorage.getItem('userEntries')) || [];
+  let entries = JSON.parse(localStorage.getItem('userEntries')) || [];
   return entries;
 };
 
